@@ -15,13 +15,17 @@ $\text{on FPGAs after some minor changes.}$
 ## $\textbf{General FNN structure}$
 $\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these }$
 $\text{layers also include input layer and output layer and remaining are the hidden layers.}$
-                           ![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
+![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
    
 $\text{ Since neruon is a basic bulding block of a forward neural network so its necessary to discuss its general structure.}$
 
 ## $\textbf{Neuron}$
-$\text{A neuron have many inputs and one output. Each input is multiplied by a corresponding weight and an overall bias}$
+$\text{A neuron have many inputs and one output. Each input is multiplied by a corresponding weight}$ $ W_{i} \text{ and an overall bias}$
 $\text{is added. After that this result is applied to an activation function that gives the finial output.}$
 
 ![General_structure_neuron](https://user-images.githubusercontent.com/91585086/183300664-178cc740-6eb4-44ac-9140-2a4b7d264574.png)
+
+## $\textbf{Implementation of a Neuron in Verilog}$
+$\text{The neuron is designed in such a way that it accepts the input image data}$ $\textbf{ sequentially}$ $\text{ in the }$ $\textbf{fixed point binary}$
+$\text{format.}
 
