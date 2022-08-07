@@ -13,8 +13,8 @@ $\text{In this project fully connected neural network is implemented in synthesi
 $\text{on FPGAs after some minor changes.}$
 
 ## $\text{General FNN structure}$
-$\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these layers also}$
-$\text{include input layer and output layer and remaining are the hidden layers.}$
+$\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these }$
+$\text{layers also include input layer and output layer and remaining are the hidden layers.}$
 ![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
 
 
