@@ -20,7 +20,7 @@ $\text{layers also include input layer and output layer and remaining are the hi
 $\text{ Since neruon is a basic bulding block of a forward neural network so its necessary to discuss its general structure.}$
 
 ## $\textbf{Neuron}$
-$\text{A neuron have many inputs and one output. Each input is multiplied by a corresponding weight}$ $ W_{i} \text{ and an overall bias}$
+$\text{A neuron have many inputs and one output. Each input is multiplied by a corresponding weight}$ $ W_{i}$ $\text{ and an overall bias}$
 $\text{is added. After that this result is applied to an activation function that gives the finial output.}$
 
 ![General_structure_neuron](https://user-images.githubusercontent.com/91585086/183300664-178cc740-6eb4-44ac-9140-2a4b7d264574.png)
