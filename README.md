@@ -9,11 +9,12 @@ $\text{GPUs have some drawbacks, such as high power consumption and high cost. T
 $\text{better fit as it is a low power device, which provides a similar degree of acceleration }$
 $\text{to a GPU.}$
 
-$\text{In this project fully connected neural network is implemented in synthesizable} \textbf{ Verilog}. $\text{This is deployable}$
+$\text{In this project fully connected neural network is implemented in synthesizable} \textbf{ Verilog}.$ $\text{This is deployable}$
 $\text{on FPGAs after some minor changes.}$
 
 ## $\text{General FNN structure}$
-
+$\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these layers also}$
+$\text{include input layer and output layer and remaining are the hidden layers.}$
 ![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
 
 
