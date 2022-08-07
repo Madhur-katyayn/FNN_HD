@@ -15,9 +15,8 @@ $\text{on FPGAs after some minor changes.}$
 ## $\textbf{General FNN structure}$
 $\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these }$
 $\text{layers also include input layer and output layer and remaining are the hidden layers.}$
-<p align="center">
-   ![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
-</p>
+                           ![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
+   
 $\text{ Since neruon is a basic bulding block of a forward neural network so its necessary to discuss its general structure.}$
 
 ## $\textbf{Neuron}$
