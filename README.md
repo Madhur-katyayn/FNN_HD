@@ -14,6 +14,6 @@ $\text{on FPGAs after some minor changes.}$
 
 ## $\text{General FNN structure}$
 
-$$\sqrt{2}$$
+![FNN](https://user-images.githubusercontent.com/91585086/183276654-58cde0ca-0cef-4131-903d-e5f574b42baa.png)
 
-![image](https://user-images.githubusercontent.com/91585086/183265883-edb8eee4-b4df-4f41-8b73-a5d418854c85.png)
+
