@@ -1,4 +1,4 @@
-## $\text{Introduction}$
+## $\textbf{Introduction}$
 $\text{Fully Connected Neural Network(FNN) is a type of Artificial Neural Network. FNNs has been popular in computer vision, }$ 
 $\text{and are gaining popularity in a variety of fields, including radiology}$
 
@@ -12,7 +12,7 @@ $\text{to a GPU.}$
 $\text{In this project fully connected neural network is implemented in synthesizable} \textbf{ Verilog}.$ $\text{This is deployable}$
 $\text{on FPGAs after some minor changes.}$
 
-## $\text{General FNN structure}$
+## $\textbf{General FNN structure}$
 $\text{Fully Connected Neural Network composed of multiple layer and each layer have a fixed number of neurons. All these }$
 $\text{layers also include input layer and output layer and remaining are the hidden layers.}$
 
@@ -20,3 +20,6 @@ $\text{layers also include input layer and output layer and remaining are the hi
 
 $\text{ Since neruon is a basic bulding block of a forward neural network so its necessary to discuss its general structure.}$
 
+## $\textbf{Neuron}$
+$\text{A neuron have many inputs and one output. Each input is multiplied by a corresponding weight and an overall bias}$
+$\text{is added. After that this result is applied to an activation function that gives the finial output.}$
