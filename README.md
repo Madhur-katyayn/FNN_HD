@@ -29,12 +29,12 @@ $\text{is added. After that this result is applied to an activation function tha
 ## $\textbf{Implementation of a Neuron in Verilog}$
 $\text{The neuron is designed in such a way that it accepts the input image data}$ $\textbf{ sequentially}$ $\text{ in the }$ $\textbf{fixed point binary}$
 $\text{format. Every Neuron has its own small RAM to store weights(It will be discussed how weights will arrive in RAM of }$
-$\text{each neuron.). When the "In_data_valid" becomes one controller start enables both the counter and RAM. Counter is reseted to 0.}$
+$\text{each neuron.). When the "In-data-valid" becomes one controller start enables both the counter and RAM. Counter is reseted to 0.}$
 $\text{ After that input data start arriving sequentially. For every pixel of input image corresponding weight is fetched from memory and }$
 $\text{fed to multiplier after sign extentsion(Not required for some neruon). When multiplication is completed it is fed to an adder that}$
 $\text{ already have previously stored multiplication result as its input. After that result is again loaded in a register and this continues}$
 $\text{ to repeat until counter reaches to the second last address of RAM. At the last address bias is stored. After that bias is fetched from}$
-$\text{ memory and added directly to last data of register after sign extention. After that "Demux_control" signal is made high that connects }$
+$\text{ memory and added directly to last data of register after sign extention. After that "Demux-control" signal is made high that connects }$
 $\text{ output of register to activation function. Activation function gives the finial result.}
 
 ![neuron_architecture](https://user-images.githubusercontent.com/91585086/183444485-0b3ae431-46c2-4c1c-b1c8-82b4d22bca47.png)
