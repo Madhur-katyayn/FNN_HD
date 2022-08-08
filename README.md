@@ -31,6 +31,7 @@ $\text{The neuron is designed in such a way that it accepts the input image data
 $\text{format. Every Neuron has its own small RAM to store weights(It will be discussed how weights will arrive in RAM of }$
 $\text{each neuron.)}$
 
-![neuron_architecture drawio (1)](https://user-images.githubusercontent.com/91585086/183349367-c2be4045-3656-48b8-a380-4e538ca36234.png)
+![neuron_architecture](https://user-images.githubusercontent.com/91585086/183444485-0b3ae431-46c2-4c1c-b1c8-82b4d22bca47.png)
+
 
 
