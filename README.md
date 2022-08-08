@@ -28,6 +28,8 @@ $\text{is added. After that this result is applied to an activation function tha
 
 ## $\textbf{Implementation of a Neuron in Verilog}$
 $\text{The neuron is designed in such a way that it accepts the input image data}$ $\textbf{ sequentially}$ $\text{ in the }$ $\textbf{fixed point binary}$
-$\text{format. Every Neuron has its own small RAM to store weights(It will be discussed how weights will arrive in RAM of }
+$\text{format. Every Neuron has its own small RAM to store weights(It will be discussed how weights will arrive in RAM of }$
 $\text{each neuron.)}$
+
+![neuron_architecture drawio](https://user-images.githubusercontent.com/91585086/183348987-6693646b-ca61-4edc-838e-2171f96125a8.png)
 
