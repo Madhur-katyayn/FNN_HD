@@ -41,7 +41,7 @@ $\text{function. Activation function gives the finial result.}$
 ![neuron_architecture](https://user-images.githubusercontent.com/91585086/183444485-0b3ae431-46c2-4c1c-b1c8-82b4d22bca47.png)
 
 ## $\text{Architecture of FNN}$
-
+$\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183720077-6e657a5f-44fa-4138-9543-3e9127b727ee.png)
 
 
