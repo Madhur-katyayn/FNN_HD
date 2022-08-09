@@ -29,7 +29,7 @@ $\text{is added. After that this result is applied to an activation function tha
 ## $\textbf{Implementation of a Neuron in Verilog}$
 $\text{The neuron is designed in such a way that it accepts the input image data}$ $\textbf{ sequentially}$ $\text{ in the }$ $\textbf{fixed point binary}$
 $\text{format. Every Neuron has its own small RAM to store weights(It will be discussed how weights will arrive in RAM of }$
-$\text{each neuron.). When the "In-data-valid" becomes one controller start enables both the counter and RAM. Counter is }$
+$\text{each neuron.). When the "In-data-valid" becomes "1" controller enables both the counter and RAM. Counter is }$
 $\text{reseted to 0. After that input data start arriving sequentially. For every pixel of input image corresponding weight }$
 $\text{is fetched from memory and fed to multiplier after sign extentsion(Not required for some neruon). When multiplication}$
 $\text{ is completed it is fed to an adder that already have previously stored multiplication result as its input. After }$
@@ -42,5 +42,6 @@ $\text{function. Activation function gives the finial result.}$
 
 ## $\text{Architecture of FNN}$
 
+![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183720077-6e657a5f-44fa-4138-9543-3e9127b727ee.png)
 
 
