@@ -32,13 +32,15 @@ $\text{format. Every Neuron has its own small RAM to store weights(It will be di
 $\text{each neuron.). When the "In-data-valid" becomes one controller start enables both the counter and RAM. Counter is }$
 $\text{reseted to 0. After that input data start arriving sequentially. For every pixel of input image corresponding weight }$
 $\text{is fetched from memory and fed to multiplier after sign extentsion(Not required for some neruon). When multiplication}$
-$\text{  is completed it is fed to an adder that already have previously stored multiplication result as its input. After }$
+$\text{ is completed it is fed to an adder that already have previously stored multiplication result as its input. After }$
 $\text{that result is again loaded in a register and this continues to repeat until counter reaches to the second last address }$
 $\text{ of RAM. At the last address bias is stored. After that bias is fetched from memory and added directly to last data of }$
 $\text{register after sign extention. After that "Demux-control" signal is made high that connects output of register to activation }$
 $\text{function. Activation function gives the finial result.}$
 
 ![neuron_architecture](https://user-images.githubusercontent.com/91585086/183444485-0b3ae431-46c2-4c1c-b1c8-82b4d22bca47.png)
+
+## $\text{Architecture of FNN}
 
 
 
