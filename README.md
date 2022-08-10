@@ -42,6 +42,7 @@ $\text{function. Activation function gives the finial result.}$
 
 ## $\text{Architecture of FNN}$
 $\text{Click on the image to see clearly}$
-![FNN_architecture drawio_0](https://user-images.githubusercontent.com/91585086/183721446-8f933640-c7a7-4fc2-a470-87a31c819a1a.png)
+![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
+
 
 
