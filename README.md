@@ -38,7 +38,7 @@ $\text{ of RAM. At the last address bias is stored. After that bias is fetched f
 $\text{register after sign extention. After that "Demux-control" signal is made high that connects output of register to activation }$
 $\text{function. Activation function gives the finial result.}$
 
-![neuron_architecture](https://user-images.githubusercontent.com/91585086/183444485-0b3ae431-46c2-4c1c-b1c8-82b4d22bca47.png)
+![neuron_arch_finial](https://user-images.githubusercontent.com/91585086/185055468-f76ffcbd-aea5-4db4-8b7e-f66df7a304fa.png)
 
 ## $\text{Architecture of FNN}$
 $\text{Click on the image to see clearly}$
