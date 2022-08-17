@@ -33,6 +33,9 @@ Note that FNN is being trained using a general purpose processor so weights obta
 Once every neuron has received their weights controller send a signal to outside stimulus informing that FNN is ready to perform the operations. After receiving this signal outside stimulus start sending pixeles of the image data while making single "In_data_valid" as 1. Controller reset every data storing register present except the register that stores "part_number and RAM. After that it enables the "start1" signal of the first layer. Data start reaching to every neuron and they start performing their operations. Once all pixel reaches to every neruon and every neruon finishes their work it "enable" the PISO shift register present next to layer and all the output of neuron is dumped into the PISO register together. After that controller makes "enable" of register 0 and it signals "FNN_ready" to outsides stimulus.
 After that "shift1" of PISO register and "start2" of second layer is enabled and it start sending its data to next layer. Note that during this time first layer neuron is also receiving the data and performing their operations(And this is how layer level pipelining is implemented). Same thing happens to the next layers.
 
+## $\text{Results}
+Implemented handwritten digit recognizer can detect the digits with 92% accuracy.
+![image](https://user-images.githubusercontent.com/91585086/185153734-f6fda117-d8d0-43df-9e2e-359adb22ef28.png)
 
 $\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
