@@ -25,7 +25,8 @@ In the implemented design, the architecture of a forward neural network consists
 This PISO shift register serve two purpose here, (1.) Convert parallel data output of each neruon to serial form so that it can be received by the next layer. (2.) It also helps in implementing layer level pipelining just by making some changes in the architecture of controller.
 
 
-###$\text{How data flow happens in implemented FNN}$
+### $\text{How data flow happens in implemented FNN}$
+
 $\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
 
