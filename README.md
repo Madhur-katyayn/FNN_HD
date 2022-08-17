@@ -21,12 +21,14 @@ The neuron is designed in such a way that it accepts the input image data sequen
 ![neuron_arch_finial](https://user-images.githubusercontent.com/91585086/185057835-dd9982d7-2b5f-4022-9ea8-cdf666c66fcf.png)
 
 ## $\text{Architecture of FNN}$
-In the implemented design, the architecture of a forward neural network consists of four neural layers(named layer1, layer2, layer3, layer4), maxfinder module and a controller. Layer1 have 40 neurons, layer2, layer3 and layer4 have 10 neurons. Since each neuron in the layers recieve the data sequentially but all neruons in a layer produce their result together so for parallel to serial conversion a PISO shift register is also placed in between two layers. The dataflow inside PISO shift register is controlled by three control signal named "enable", "reset", "shift".
-This PISO shift register serve two purpose here, (1.) Convert parallel data output of each neruon to serial form so that it can be received by the next layer. (2.) It also helps in implementing layer level pipelining just by making some changes in the architecture of controller.
+In the implemented design, the architecture of a forward neural network consists of four neural layers(named layer1, layer2, layer3, layer4), maxfinder module and a controller. Layer1 have 40 neurons, layer2, layer3 and layer4 each have 10 neurons. Since all neruons in a layer produce their result together but next layer neurons recieve the previous layer neuron output serially so for parallel to serial conversion a PISO shift register is also placed in between two layers. The dataflow inside PISO shift register is controlled by three control signal named "enable", "reset", "shift".
+This PISO shift register serve two purpose here, (1.) Convert parallel data output of each neruon in a layer to serial form so that it can be received by the next layer. (2.) It also helps in implementing layer level pipelining just by making some changes in the architecture of controller.
+
+### $\text{How weights arrives in the RAM of individual neurons?}
 
 
-### $\text{How data flow happens in implemented FNN}$
-
+### $\text{How data flow happens in implemented FNN(What controller do!!}$
+Before 
 $\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
 
