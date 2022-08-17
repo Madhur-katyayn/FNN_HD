@@ -1,6 +1,5 @@
 ## $\textbf{Introduction}$
-$\text{Fully Connected Neural Network(FNN) is a type of Artificial Neural Network. FNNs has been popular in computer vision, }$ 
-$\text{and are gaining popularity in a variety of fields, including radiology}$
+Fully Connected Neural Network(FNN) is a type of Artificial Neural Network. FNNs has been popular in computer vision, and are gaining popularity in a variety of fields, including radiology
 
 $\text{Traditional Fully Connected Neural Networks use CPUs to carry out calculations. Such calculations are wasteful and }$
 $\text{slow, and thus make it impossible to meet real-time calculating needs.}$ $\text{As a result, FNNs based on graphics processing }$
@@ -37,10 +36,15 @@ $\text{that result is again loaded in a register and this continues to repeat un
 $\text{ of RAM. At the last address bias is stored. After that bias is fetched from memory and added directly to last data of }$
 $\text{register after sign extention. After that "Demux-control" signal is made high that connects output of register to activation }$
 $\text{function. Activation function gives the finial result.}$
-
-![neuron_arch_finial](https://user-images.githubusercontent.com/91585086/185055468-f76ffcbd-aea5-4db4-8b7e-f66df7a304fa.png)
+![neuron_arch_finial](https://user-images.githubusercontent.com/91585086/185057835-dd9982d7-2b5f-4022-9ea8-cdf666c66fcf.png)
 
 ## $\text{Architecture of FNN}$
+$\text{In the implemented design, the architecture of a forward neural network consists of four neural layers(named layer1, layer2, layer3, layer4), maxfinder module and a controller. Layer1 have 40 neurons, layer2, layer3 and layer4 have 10 neurons. Since each neuron in the layers recieve the data sequentially but all neruons in a layer produce their result together so for parallel to serial conversion a PISO shift register is also placed in between two layers. The dataflow inside PISO shift register is controlled by three control signal named "enable", "reset", "shift". }$
+$\text{This PISO shift register serve two purpose here, (1.) Convert parallel data output of each neruon to serial form so that it can be received by the next layer. (2.) It also helps in implementing layer level pipelining just by making some changes in the architecture of controller.}
+
+
+###$\text{How data flow happens in implemented FNN}
+$
 $\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
 
