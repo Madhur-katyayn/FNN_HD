@@ -26,11 +26,14 @@ In the implemented design, the architecture of a forward neural network consists
 This PISO shift register serve two purpose here, (1.) Convert parallel data output of each neruon in a layer to serial form so that it can be received by the next layer. (2.) It also helps in implementing layer level pipelining just by making some changes in the architecture of controller.
 
 ### $\text{How weights arrives in the RAM of individual neurons?}$
-Note that FNN is being trained using a general purpose processor so weights obtained after training has to be received from outside stimulus. So to receive those weights a 23 bit bus is created that goes into every neuron of all layers. Out of 23 bit width of bus, first 16 bit contains the fixed point binary weight and next 7 bits contains the binary coded part_number of the neuron to which this particular weight is intended. Before the neural network start performing its intended operation, weights are sent to each neuron RAM. Last 7 bit value of the weights bus data is compared with part number of neuron, whichever neuron part_number matches with it, corresponding weight(i.e. data of first 16 bit) is placed in the RAM of that neuron. In this way RAM of every neuron receive the weights.
+Note that FNN is being trained using a general purpose processor so weights obtained after training has to be received from outside stimulus. So to receive those weights a 23 bit bus is created that goes into every neuron of all layers. Out of 23 bit width of bus, first 16 bit contains the fixed point binary weight and next 7 bits contains the binary coded part_number of the neuron to which this particular weight is intended. Before the neural network start performing its intended operation, weights are sent to each neuron RAM. Last 7 bit value of the weights bus data is compared with part number of neuron, whichever neuron part_number matches with it, corresponding weight(i.e. data of first 16 bit) is placed in the RAM of that neuron. In this way RAM of every neuron receives the weights.
 
 
-### $\text{How data flow happens in implemented FNN(What controller do!!}$
-Before 
+### $\text{How data flow happens in implemented FNN(What controller do!!)}$
+Once every neuron has received their weights controller send a signal to outside stimulus informing that FNN is ready to perform the operations. After receiving this signal outside stimulus start sending pixeles of the image data while making single "In_data_valid" as 1. Controller reset every data storing register present except the register that stores "part_number and RAM. After that it enables the "start1" signal of the first layer. Data start reaching to every neuron and they start performing their operations. Once all pixel reaches to every neruon and every neruon finishes their work it "enable" the PISO shift register present next to layer and all the output of neuron is dumped into the PISO register together. After that controller makes "enable" of register 0 and it signals "FNN_ready" to outsides stimulus.
+After that "shift1" of PISO register and "start2" of second layer is enabled and it start sending its data to next layer. Note that during this time first layer neuron is also receiving the data and performing their operations(And this is how layer level pipelining is implemented). Same thing happens to the next layers.
+
+
 $\text{Click on the image to see clearly}$
 ![FNN_architecture drawio](https://user-images.githubusercontent.com/91585086/183919382-66d06d39-17b9-421f-a605-636b71f88775.png)
 
